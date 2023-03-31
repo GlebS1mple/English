@@ -153,6 +153,9 @@ body.lock{
     }
 }
 @media(max-width:767px){
+    .form{
+        max-width: 100%;
+    }
     .section-get{
         margin-top: 54px;
         padding-top: 44px;
@@ -806,7 +809,7 @@ order: 3;
     display: flex;
     width: 960px;
     height: 960px;
-    background: url(../images/section5/author.jpg) no-repeat top center;
+    background: url(../images/section5/author.png) no-repeat top center;
     background-position-y: 100px;
     background-position-x: -33px;
 }
@@ -1126,6 +1129,7 @@ transition: fill .3s;
     }
 /* Кастомные чекбоксы  */
 input[type=checkbox] {
+    border-radius: 0px;
     position: relative;
       border: 1.5px solid #000000;
       background: none;
@@ -1222,7 +1226,7 @@ input[type=checkbox] {
         height: 7px;
     }
     .section6-userdata-line img{
-        width: 300px;
+        width: 100%;
     }
 }
 @media(max-width:767px){
@@ -1270,12 +1274,11 @@ input[type=checkbox] {
         align-items: center;
     }
     .section6-userdata input,.section6-userdata{
-        width: 310px;
-        max-width: 310px;
+width: 100%;
         margin: 0px 0px 0px 0px;
     }
     .section6-userdata-line img{
-        width: 310px;
+        width: 100%;
     }
     .section6-userdata-options-where{
         padding-top: 26px;
@@ -1306,7 +1309,7 @@ input[type=checkbox] {
     right: -13vw;
     width: 730px;
     height: 964px;
-    background: url(../images/section7/woman.jpg) no-repeat top center;
+    background: url(../images/section7/woman.png) no-repeat top center;
     background-size: cover;
 }
 .section7-left {
@@ -1353,7 +1356,7 @@ input[type=checkbox] {
 }
 .section7-title-line{
     position: absolute;
-    bottom: 0px;
+    bottom: -10px;
     left: 0px;
     width: 100%;
 }
@@ -1396,7 +1399,7 @@ input[type=checkbox] {
         height: 680px;
         right: -100px;
         top: -75px;
-        background: url(../images/section7/woman.jpg) no-repeat top center;
+        background: url(../images/section7/woman.png) no-repeat top center;
         background-size: cover;
     }
     .section-promotion{
