@@ -858,7 +858,7 @@ order: 3;
         top: 270px;
     }
     .section5-right {
-        top: 125px;
+        top: 140px;
         right: 0px;
         width: 675px;
         height: 760px;
@@ -1092,8 +1092,10 @@ text-align: left;
     font-size: 21px;
     line-height: 124.9%;
     letter-spacing: 0.05em;
+    color: black;
+}
+.section6-userdata input::placeholder{
     color: #888888;
-    
 }
 .section6-userdata{
     position: relative;
@@ -1421,7 +1423,7 @@ width: 100%;
 @media(max-width:1367px){
     .section7-right {
         height: 680px;
-        right: -100px;
+        right: -130px;
         top: -75px;
         background: url(../images/section7/woman.png) no-repeat top center;
         background-size: cover;
