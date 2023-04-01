@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <!--  Оставил мимнимизированный файл css -->
-    <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/css/body.css">
-  <link rel="stylesheet" href="assets/css/faq.css"> 
-  <!--<link rel="stylesheet" href="assets/css/style.min.css" />-->
+  <link rel="stylesheet" href="assets/css/faq.css">
+  <!--  <link rel="stylesheet" href="assets/css/style.min.css" /> -->
   <title>Speaking Club</title>
 </head>
 <!-- Поменял значение атрибута lang на ru, для поисковиков это достаточно важно, поэтому нужно указывать основной язык сайта -->
@@ -432,7 +432,7 @@
           <div class="section6-application">
             <form class="form" action="https://formspree.io/f/xlekbajk" method="POST">
               <div class="section6-userdata"><input type="text" placeholder="Телефон или логин" name="contacts"></div>
-              <div class="section6-userdata-line"><img alt="Линия" src="assets/images/section6/field_line.svg"></div>
+              <!-- <div class="section6-userdata-line"><img alt="Линия" src="assets/images/section6/field_line.svg"></div> -->
               <div class="section6-userdata-options">
                 <p class="section6-userdata-options-where">Куда вам написать?</p>
                 <div class="section6-userdata-options-social">
@@ -479,16 +479,19 @@
           <div class="section7-headline animate _anim-no-hide">
             <!-- Тоже обязательно нужно убрать некоторые <br>, т.к. на мобильно версии текст не должен идти лестницей -->
             <h6 class="section7-title title">Еще не умеете<br> говорить или понимаете, что только языковой практики
-              <span>недостаточно?<div class="section7-title-line">
+              <span class="section7-span">
+                недостаточно?
+                <div class="section7-title-line">
                   <svg width="401" height="6" viewBox="0 0 401 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M0.356117 4.83649C1.81243 4.89513 3.02405 4.94849 4.61468 4.94793C64.2529 4.92707 123.932 3.93495 183.567 3.4654C249.914 2.943 316.4 2.04016 382.728 3.25017C386.962 3.32741 394.97 4.25605 399.822 3.65167C401.223 3.4772 397.279 2.65639 395.865 2.57847C372.304 1.2803 348.306 1.55436 324.682 1.23309C235.183 0.0159213 145.649 0.500821 56.1254 0.898605"
                       stroke="black" stroke-width="0.7" stroke-linecap="round" />
                   </svg>
-                </div></span>
+                </div>
+              </span>
             </h6>
             <!-- как правильно выравнить линию чтобы была под словом "недостаточно", можно пэддингом но думаю это неправильно-->
-            <!--Отвечаю: необходимо линию занести внутрь span или любого другого общего блока, чтобы у слова "недостаточно" и линии был общий родитель, ему задаем position:relative, а линии positio:absolute width:100% -->
+            <!--Отвечаю: необходимо линию занести внутрь любого другого общего блока, чтобы у слова "недостаточно" и линии был общий родитель, ему задаем position:relative, а линии positio:absolute width:100% -->
           </div>
           <div class="section7-info">
             <div class="section7-points">
