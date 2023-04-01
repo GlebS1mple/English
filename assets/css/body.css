@@ -746,7 +746,6 @@ order: 3;
 .section5-eugene {
     width: 100%;
     display: flex;
-    gap: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: start;
@@ -769,6 +768,7 @@ order: 3;
     display: inline-block;
     width: 163px;
     height: 12px;
+    margin-bottom: 10px;
 }
 .section5-pluses {
     width: 100%;
@@ -785,7 +785,7 @@ order: 3;
     justify-content: space-between;
 }
 .section5-pluses-point {
-    padding-top: 5px;
+    padding-top: 10px;
     display: flex;
     padding-right: 10px;
 }
@@ -836,6 +836,9 @@ order: 3;
 /* тут заканчивается пятая секция (об авторе) */
 
 @media(max-width:1367px){
+    .section5-pluses-point{
+        padding-top: 5px;
+    }
     .section-author{
         padding-top: 95px;
         padding-bottom: 80px;
@@ -1006,6 +1009,7 @@ order: 3;
 .section6-left img{
     width: 675px;
     height: 675px;
+    object-fit: cover;
 }
 .section6-right {
     display: flex;
@@ -1089,6 +1093,21 @@ text-align: left;
     line-height: 124.9%;
     letter-spacing: 0.05em;
     color: #888888;
+    
+}
+.section6-userdata{
+    position: relative;
+}
+.section6-userdata::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-bottom: 1px solid #000000;
+}
+.section6-userdata input:focus{
+    color: black;
 }
 .form-line-active input:focus, .form-line-active textarea:focus {
     border: 1px solid green !important;
@@ -1106,6 +1125,7 @@ text-align: left;
     width: fit-content;
 }
 .section6-userdata-submit button{
+    padding: 0px;
     border: none;
     outline: none;
     background-color: transparent;
@@ -1176,6 +1196,7 @@ input[type=checkbox] {
     .section6-left img{
         width: 575px;
         height: 575px;
+        object-fit: cover;
     }
     .section6-userdata input,.section6-userdata-options-where{
         font-size: 20px;
@@ -1194,6 +1215,7 @@ input[type=checkbox] {
     .section6-left img{
         width: 475px;
         height: 475px;
+        object-fit: cover;
     }
     .section6-userdata input,.section6-userdata-options-where{
         font-size: 18px;
@@ -1205,13 +1227,14 @@ input[type=checkbox] {
     }
     .section6-line img{
         width: 143px;
-        height: 9px;
+        height: 12px;
     }
 }
 @media(max-width:992px){
     .section6-left img{
         width: 375px;
         height: 375px;
+        object-fit: cover;
     }
     .section6-userdata input,.section6-userdata-options-where{
         font-size: 16px;
@@ -1223,7 +1246,7 @@ input[type=checkbox] {
     }
     .section6-line img{
         width: 123px;
-        height: 7px;
+        height: 12px;
     }
     .section6-userdata-line img{
         min-width: 100%;
@@ -1253,7 +1276,7 @@ input[type=checkbox] {
     }
     .section6-line img {
         width: 103px;
-        height: 5px;
+        height: 12px;
         margin-left: 90%;
     }
     .section6-userdata input,.section6-userdata-options-where{
@@ -1475,6 +1498,7 @@ width: 100%;
         width: 455px;
         height: 481px;
         background: url(../images/section7/woman-2.jpg) no-repeat top center;
+        
     }
     .section7-left{
         width: 100%;
@@ -1890,7 +1914,7 @@ margin 0 auto ------ нужен чтобы выравнить по середи�
 }
 @media(max-width:1367px){
 	.container {
-		max-width: 1245px;
+		max-width: 1150px;
 	}
     .title{
         font-size: 47px;
@@ -2013,7 +2037,7 @@ margin 0 auto ------ нужен чтобы выравнить по середи�
     animation: draw 4s linear forwards;
 }
 .section-work._active svg>path{
-    stroke-width: 1;
+    stroke-width: 0.5;
     stroke-dasharray: 2000;
     stroke-dashoffset: 2000;
     animation: draw 3s linear forwards;
