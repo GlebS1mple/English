@@ -154,7 +154,7 @@ body.lock{
 }
 @media(max-width:767px){
     .form{
-        max-width: 100%;
+        min-width: 100%;
     }
     .section-get{
         margin-top: 54px;
