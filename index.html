@@ -2,22 +2,30 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--   Это очень важный тег для SEO, это описание нашего сайта, то, что видит человек при поиске в гугле снизу под названием, обязательно к использованию! -->
+  <meta name="description"
+    content="Клуб английского языка в Сранаске Speaking Club: разговорный английский, много часов практики, лучшие преподаватели!">
+  <!-- Тут добавил иконку логотипа, которая будет видна во вкладке в гугле рядом с title страницы. Здесь обязательно использовать форма ico, можно легко форматировать png в ico -->
+  <link type="image/x-icon" href="assets/icons/logo.ico" rel="shortcut icon">
   <!--  Оставил мимнимизированный файл css -->
-  <link rel="stylesheet" href="assets/css/reset.css">
+  <!--   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/css/body.css">
-  <link rel="stylesheet" href="assets/css/faq.css">
-  <!--  <link rel="stylesheet" href="assets/css/style.min.css" /> -->
+  <link rel="stylesheet" href="assets/css/faq.css"> -->
+  <link rel="stylesheet" href="assets/css/style.min.css" />
   <title>Speaking Club</title>
 </head>
-<!-- Поменял значение атрибута lang на ru, для поисковиков это достаточно важно, поэтому нужно указывать основной язык сайта -->
-<!-- Лучше все пробелы убирать -->
+
+<!-- В самом начале всегда должен идти <!DOCTYPE html> ОБЯЗАТЕЛЬНО  -->
+<!-- Поменял значение атрибута lang у тега html на ru, для поисковиков это достаточно важно, поэтому нужно указывать основной язык сайта -->
+<!-- Лучше все пробелы убирать и комментарии тоже, можешь себе файл сохранить с комментариями, но на хостинг надо залить файл без них -->
 <!-- Обязательно каждому тегу img нужно задавать атрибут alt, он нужен для того, чтобы если картинка не загрузиться, отобразился текст, описывающий её, а также нужен для роботов, которые читают страницу, ведь не все люди могут видеть, для них и существуют эти роботы -->
 <!-- Обязательно нужно использовать семантические теги, т.е. теги, которые добавляют какой-то смысл, Вот основные: header,main,section,footer,p,h1-h6 и т.д. Обязательно погугли про семантику, это также нужно для роботов, которые читают страницу, а также поисковики на это тоже смотрят, если нет этих тегов, страница не будет в начале поиска гугула -->
 <!-- Для адаптации я внутри каждего блока создавал обертку с классом container, можешь почитать, как это работает, тут уж надо самому попробовать, стили всем контеунерам задал в файле body.css строка 16 -->
+<!-- После верстки всегда надо загружать файл index.html в валидатор, просто пишешь валидатор w3c, там он прописывает все ошибки и предупреждения, ошибки надо ОБЯЗАТЕЛЬНО исправить, а вот предупреждения не так страшны, можешь сам залить эту страницу, там никаких предупреждений и ошибок быть не должно) -->
 
 <body>
   <!-- Для шапки есть отдельный тег header, нужно использовать его, а не div -->
@@ -120,10 +128,11 @@
       </div>
     </div>
   </main>
-  <!--     Обязательно используем тег section, его нужно использовать для отделения секции, но не везде, а только у тех секций, у которых есть заголовок, везде добавил этот тег и в остальных блоках. Ты после каждого блока(секции) писал комментарий, что он заканчивается, теперь с использованием тега section всё итак размечено и интуитивно понятно и писать такие комментарии больше не нужно) -->
+  <!-- Обязательно используем тег section, его нужно использовать для отделения секции, но не везде, а только у тех секций, у которых есть заголовок, везде добавил этот тег и в остальных блоках. Ты после каждого блока(секции) писал комментарий, что он заканчивается, теперь с использованием тега section всё итак размечено и интуитивно понятно и писать такие комментарии больше не нужно) -->
   <section class="section-get">
     <div class="container get__container">
-      <a name="what_get"></a>
+      <!--  В данном случае на ссылку лучше добавить id, вместо name, так как подход с name уже устарел  -->
+      <a id="what_get"></a>
       <div class="section2-headline-block animate _anim-no-hide">
         <!--  Использовал здесь тег h2 , все заголовки на странице должны идти по порядку, всего их 6, в 6 и 8 блоке буду использовать p -->
         <h2 class="section2-headline title">Что я получу?</h2>
@@ -195,7 +204,7 @@
 
   <section class="section-work animate _anim-no-hide">
     <div class="container work__container">
-      <a name="how_work"></a>
+      <a id="how_work"></a>
       <div class="section3-headline-block animate _anim-no-hide">
         <h3 class="title">Как работает клуб?</h3>
         <div class="section3-headline-underline">
@@ -222,7 +231,6 @@
               <path d="M308.457 16.8613C303.194 21.619 298.308 26.2511 293.88 29.9043" stroke="black" stroke-width="0.7"
                 stroke-linecap="round" />
             </svg>
-            <!-- <img alt="Овал" src="assets/images/section3/oval1.svg"> -->
             <p class="section3-block-info"> приглашаем в общий чат <br> после покупки билета </p>
           </div>
         </div>
@@ -316,7 +324,7 @@
   <!-- блок 4 где цена с чашкой кофе -->
   <section class="section-price">
     <div class="container price__container">
-      <a name="price"></a>
+      <a id="price"></a>
       <div class="section4">
         <div class="section4-left animate _anim-no-hide">
           <picture>
@@ -414,7 +422,7 @@
   <!-- тут начинается шестая секция (контактная форма) -->
   <section class="section-contacts">
     <div class="container contacts__container">
-      <a name="contacts"></a>
+      <a id="contacts"></a>
       <div class="section6">
         <div class="section6-left animate _anim-no-hide">
           <picture>
@@ -425,8 +433,8 @@
         </div>
         <div class="section6-right">
           <div class="section6-headline animate _anim-no-hide">
-            <!--             Лучше br не использовать, иногда можно, но всё-таки лучше указывать блоку max-width. Тут обязательно нужно использовать max-width, потому что в мобильно версии никакого переноса нет и теекст идёт в одну строку -->
-            <p class="section6-title title">Оставить заявку</p>
+            <!-- Лучше br не использовать, иногда можно, но всё-таки лучше указывать блоку max-width. Тут обязательно нужно использовать max-width, потому что в мобильно версии никакого переноса нет и теекст идёт в одну строку -->
+            <h6 class="section6-title title">Оставить заявку</h6>
             <div class="section6-line"><img alt="Линия" src="assets/images/section6/application-line.svg"></div>
           </div>
           <div class="section6-application">
@@ -473,7 +481,6 @@
   <!-- тут начинается седьмая секция (реклама курсов) -->
   <section class="section-promotion">
     <div class="container promotion__container">
-      <a name="faq"></a>
       <div class="section7">
         <div class="section7-left">
           <div class="section7-headline animate _anim-no-hide">
@@ -481,13 +488,13 @@
             <h6 class="section7-title title">Еще не умеете<br> говорить или понимаете, что только языковой практики
               <span class="section7-span">
                 недостаточно?
-                <div class="section7-title-line">
-                  <svg width="401" height="6" viewBox="0 0 401 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M0.356117 4.83649C1.81243 4.89513 3.02405 4.94849 4.61468 4.94793C64.2529 4.92707 123.932 3.93495 183.567 3.4654C249.914 2.943 316.4 2.04016 382.728 3.25017C386.962 3.32741 394.97 4.25605 399.822 3.65167C401.223 3.4772 397.279 2.65639 395.865 2.57847C372.304 1.2803 348.306 1.55436 324.682 1.23309C235.183 0.0159213 145.649 0.500821 56.1254 0.898605"
-                      stroke="black" stroke-width="0.7" stroke-linecap="round" />
-                  </svg>
-                </div>
+                <!-- <div class="section7-title-line"> -->
+                <svg width="401" height="6" viewBox="0 0 401 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.356117 4.83649C1.81243 4.89513 3.02405 4.94849 4.61468 4.94793C64.2529 4.92707 123.932 3.93495 183.567 3.4654C249.914 2.943 316.4 2.04016 382.728 3.25017C386.962 3.32741 394.97 4.25605 399.822 3.65167C401.223 3.4772 397.279 2.65639 395.865 2.57847C372.304 1.2803 348.306 1.55436 324.682 1.23309C235.183 0.0159213 145.649 0.500821 56.1254 0.898605"
+                    stroke="black" stroke-width="0.7" stroke-linecap="round" />
+                </svg>
+                <!--   </div> -->
               </span>
             </h6>
             <!-- как правильно выравнить линию чтобы была под словом "недостаточно", можно пэддингом но думаю это неправильно-->
@@ -529,10 +536,11 @@
 
   <!-- тут начинается восьмая секция (вопросы) -->
   <section class="section-faq">
+    <a id="faq"></a>
     <div class="container faq__containe">
       <div class="section8">
         <div class="section8-headline animate _anim-no-hide">
-          <p class="section8-title title">Частые вопросы:</p>
+          <h6 class="section8-title title">Частые вопросы:</h6>
           <div class="section8-line">
 
             <svg id="sss" width="484" height="10" viewBox="0 0 484 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -680,7 +688,6 @@
   <!-- тут заканчивается футер -->
   <!-- все скрипты обязательно добавляем только здесь перед закрывающим тегом body -->
   <script src="js/app.min.js"></script>
-  <!-- <script src="app.js"></script> -->
 </body>
 
 </html>
